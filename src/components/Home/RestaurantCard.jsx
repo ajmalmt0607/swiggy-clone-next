@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import "../../app/globals.css";
 
-const Card = ({
+const RestaurantCard = ({
     name,
     image,
     discount,
@@ -22,9 +21,9 @@ const Card = ({
         <>
             <Link
                 href="/"
-                className="flex flex-col gap-3 first:pl-4 pr-8 transform transition-transform duration-200 hover:scale-95"
+                className="flex flex-col gap-3 transform transition-transform duration-200 hover:scale-95"
             >
-                <div className="relative w-[273px] h-[182px] rounded-2xl overflow-hidden">
+                <div className="relative lg:w-[253.84px] lg:h-[169.23px] xl:w-[330.58px] xl:h-[220.39px] rounded-2xl overflow-hidden">
                     {discount && (
                         <div className="absolute bottom-2 left-3 right-0 text-left z-20">
                             <div className="mt-2 font-black text-lg text-white">
@@ -42,7 +41,7 @@ const Card = ({
                     />
                     <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black to-transparent opacity-100" />
                 </div>
-                <div className="ml-3">
+                <div className="ml-3 xl:w-[300px] lg:w-[241.84px]">
                     <h4 className="text-lg font-semibold text-font-color">
                         {truncateText(name, 26)}
                     </h4>
@@ -74,4 +73,4 @@ const Card = ({
     );
 };
 
-export default Card;
+export default RestaurantCard;

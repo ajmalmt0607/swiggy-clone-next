@@ -24,6 +24,10 @@ module.exports = {
                 lg: "1200px",
                 xl: "1600px",
             },
+            colors: {
+                "font-color": "rgba(2, 6, 12, 0.75)",
+                "address-color": "rgba(2, 6, 12, 0.6)",
+            },
         },
     },
     plugins: [],

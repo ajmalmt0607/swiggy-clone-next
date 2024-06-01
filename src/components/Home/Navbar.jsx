@@ -11,16 +11,16 @@ import Navitem from "./Navitem";
 
 const Navbar = () => {
     return (
-        <header className="shadow-custom bg-white px-5 ">
-            <div className="flex justify-between max-w-[1200px] h-20 mx-auto content-center items-center">
+        <header className="shadow-custom bg-white px-5 fixed top-0 left-0 right-0 z-50 h-20">
+            <div className="flex justify-between max-w-[1200px] h-full mx-auto content-center items-center">
                 <div className="flex">
-                    <Link className="mr-4" href="/" style={{}}>
+                    <Link className="mr-4" href="/">
                         <Image
                             src="/swiggy-1.svg"
                             width={34}
                             height={49}
                             alt="logo"
-                        ></Image>
+                        />
                     </Link>
                     <div className="flex items-center ml-[30px] text-sm">
                         <span className="font-semibold underline underline-offset-8 decoration-2">

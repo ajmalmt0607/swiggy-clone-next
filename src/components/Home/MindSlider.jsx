@@ -142,7 +142,7 @@ const MindSlider = () => {
 
     return (
         <>
-            <div className="xl:px-0 lg:px-36 py-4 max-w-[1432px] mx-auto ">
+            <div className="xl:px-0 lg:px-36 py-4 max-w-[1432px] mx-auto pt-24">
                 <div className="">
                     <div className="flex justify-between mb-4">
                         <h2 className="text-2xl font-extrabold">
@@ -196,7 +196,7 @@ const MindSlider = () => {
                                         width={144}
                                         height={180}
                                         alt="food-images"
-                                    ></Image>
+                                    />
                                 </div>
                             ))}
                         </div>
