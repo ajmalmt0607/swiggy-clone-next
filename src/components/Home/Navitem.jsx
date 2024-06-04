@@ -1,10 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const Navitem = ({ title, Icon, last }) => {
+const Navitem = ({ title, Icon, last, onClick }) => {
     return (
         <Link
-            className={`flex items-center ${last ? "mr-0" : " mr-[60px]"}`}
+            onClick={onClick}
+            className={`flex items-center ${
+                last ? "mr-0" : " mr-[60px]"
+            } hover:text-orange-500`}
             href="/"
         >
             <Icon className="mr-2" fontSize="22px" />

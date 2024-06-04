@@ -19,3 +19,82 @@
     overflow: hidden;
     filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
 }
+
+/**************************************/
+/*************************************/
+
+.overlay-open {
+    overflow-y: hidden;
+}
+
+.overlay-open body {
+    overflow-y: hidden;
+    padding-right: 0 !important;
+}
+
+.overlay-open #header {
+    padding-right: 0 !important;
+}
+
+body {
+    overflow-y: auto;
+    padding-right: 0;
+}
+
+/* Add this to your CSS file */
+/* Add these CSS styles */
+.modal-enter {
+    transform: translateX(-100%);
+}
+
+.modal-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-exit {
+    transform: translateX(0);
+}
+
+.modal-exit-active {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-border {
+    content: "";
+    display: block;
+    border-top: 1px dashed #a9abb2;
+    position: relative;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+/* ////////////////// */
+.login-modal-enter {
+    transform: translateX(100%);
+}
+
+.login-modal-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-modal-exit {
+    transform: translateX(0);
+}
+
+.login-modal-exit-active {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.small-line {
+    content: "";
+    position: relative;
+    bottom: -22px;
+    left: 0;
+    width: 30px;
+    border: 1px solid #000;
+}

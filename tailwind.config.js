@@ -27,6 +27,13 @@ module.exports = {
             colors: {
                 "font-color": "rgba(2, 6, 12, 0.75)",
                 "address-color": "rgba(2, 6, 12, 0.6)",
+                "footer-color": "rgba(255, 255, 255, 0.6);",
+                "custom-gray": "#d4d5d9",
+                "modal-1": "#282c3f",
+                "modal-2": "#93959f;",
+            },
+            backgroundColor: {
+                "footer-bg-1": "rgb(240, 240, 245);",
             },
         },
     },

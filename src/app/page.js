@@ -1,7 +1,7 @@
 import MindSlider from "@/components/Home/MindSlider";
 import RestaurantsList from "@/components/Home/RestaurantsList";
 import TopRestaurants from "@/components/Home/TopRestaurants";
-import Footer from "@/components/Home/footer";
+import Footer from "@/components/Home/Footer";
 import React from "react";
 
 const Home = () => {
