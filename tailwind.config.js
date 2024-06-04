@@ -31,6 +31,7 @@ module.exports = {
                 "custom-gray": "#d4d5d9",
                 "modal-1": "#282c3f",
                 "modal-2": "#93959f;",
+                "login-terms": "#686b78",
             },
             backgroundColor: {
                 "footer-bg-1": "rgb(240, 240, 245);",
