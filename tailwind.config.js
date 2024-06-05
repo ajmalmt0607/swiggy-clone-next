@@ -32,6 +32,7 @@ module.exports = {
                 "modal-1": "#282c3f",
                 "modal-2": "#93959f;",
                 "login-terms": "#686b78",
+                "custom-border": "rgba(40, 44, 63, 0.2)",
             },
             backgroundColor: {
                 "footer-bg-1": "rgb(240, 240, 245);",

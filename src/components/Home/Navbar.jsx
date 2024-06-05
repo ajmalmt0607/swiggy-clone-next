@@ -106,7 +106,7 @@ const Navbar = () => {
                             title="Swiggy Coperate"
                             Icon={PiSuitcaseSimple}
                         />
-                        <Navitem title="Search" Icon={FiSearch} />
+                        <Navitem title="Search" Icon={FiSearch} address="/search" />
                         <Navitem title="Offers" Icon={BiSolidOffer} />
                         <Navitem title="Help" Icon={IoHelpBuoyOutline} />
                         <Navitem
