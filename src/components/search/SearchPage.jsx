@@ -1,4 +1,5 @@
 // SearchPage.js
+"use client";
 import { MENU } from "@/utils/menu";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -32,11 +33,16 @@ const SearchPage = () => {
     };
 
     const fetchSearchResults = (query) => {
-        const results = MENU.filter(
-            (item) =>
-                item.item_name.toLowerCase().includes(query.toLowerCase()) ||
-                item.hotel_name.toLowerCase().includes(query.toLowerCase())
-        );
+        const results = MENU.filter((item) => {
+            const itemName = item.item_name ? item.item_name.toLowerCase() : "";
+            const hotelName = item.hotel_name
+                ? item.hotel_name.toLowerCase()
+                : "";
+            return (
+                itemName.includes(query.toLowerCase()) ||
+                hotelName.includes(query.toLowerCase())
+            );
+        });
         setSearchResults(results);
     };
 
