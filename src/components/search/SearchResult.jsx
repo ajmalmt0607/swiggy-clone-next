@@ -5,6 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { TbSquareRoundedChevronUpFilled } from "react-icons/tb";
 import { IoIosStar } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const SearchResult = ({ searchResults }) => (
     <div className="pt-2 font-extrabold text-[#3d4152]">
@@ -80,14 +81,17 @@ const SearchResult = ({ searchResults }) => (
                         <div className="flex flex-col items-start">
                             <TbSquareRoundedChevronUpFilled
                                 color="#eb0808"
-                                fontSize={16}
+                                fontSize={19}
                             />
-                            <h3 className="text-[18px] w-[162px] mt-1">{`${result.item_name}`}</h3>
-                            <span className="text-[15px] font-medium mt-1">
+                            <h3 className="text-[18px] w-[162px] mt-1 font-bold">{`${result.item_name}`}</h3>
+                            <span className="text-[15px] font-bold mt-1">
                                 {`₹${result.price}`}
                             </span>
-                            <button className="py-1 px-2 mt-3 text-[12px] font-normal border border-solid border-opacity-25 border-gray-900 rounded-full">
-                                More Details
+                            <button className="flex items-center py-1 px-2 mt-3 text-[12px] font-semibold border border-solid border-opacity-25 border-gray-900 rounded-full">
+                                More Details{" "}
+                                <span>
+                                    <MdKeyboardArrowRight fontSize={17} />
+                                </span>
                             </button>
                         </div>
                         <div className=" ml-[60px] w-[156px] h-[144px]">

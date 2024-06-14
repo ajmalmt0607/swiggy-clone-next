@@ -21,7 +21,7 @@ const Card = ({
     return (
         <>
             <Link
-                href="/"
+                href={`/restaurants/${name}`}
                 className="flex flex-col gap-3 first:pl-4 pr-8 transform transition-transform duration-200 hover:scale-95"
             >
                 <div className="relative w-[273px] h-[182px] rounded-2xl overflow-hidden">

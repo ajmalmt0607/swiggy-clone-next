@@ -47,7 +47,10 @@ const SearchPage = () => {
     };
 
     return (
-        <div className="flex flex-col">
+        <div
+            className="flex flex-col overflow-y-hidden"
+            style={{ scrollbarWidth: "none" }}
+        >
             <div className="w-full left-0 top-20 z-[2] bg-white pb-2 pt-[130px]">
                 <SearchInput
                     searchTerm={searchTerm}
@@ -55,11 +58,13 @@ const SearchPage = () => {
                     handleSearchSubmit={handleSearchSubmit}
                 />
                 <div className="w-[860px] mx-auto">
-                    {searchTerm === "" && <PopularCuisines />}
-                    {searchTerm !== "" && searchResults.length > 0 && (
+                    {searchTerm === "" && searchResults.length === 0 && (
+                        <PopularCuisines />
+                    )}
+                    {searchResults.length > 0 && (
                         <SearchResult searchResults={searchResults} />
                     )}
-                    {searchTerm !== "" && searchResults.length === 0 && (
+                    {searchResults.length === 0 && searchTerm !== "" && (
                         <NoResultsFound />
                     )}
                 </div>
